@@ -1,0 +1,14 @@
+$colors: (
+  primary: #c9d6ff,
+  accent: #ada996,
+  accenttwo: white
+);
+
+// replaces map-get to ref colors
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$coverImg: url(../imgs/activist.jpg);
+
+$padding: 10px;

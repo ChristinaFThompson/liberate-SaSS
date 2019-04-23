@@ -1,0 +1,76 @@
+@import "../variables.scss";
+// will need z-index property to place text on top
+body,
+html {
+  height: 100%;
+}
+html {
+}
+
+header {
+  background-color: color(accent);
+  position: sticky;
+  top: 0;
+
+  nav {
+    border: 3px solid black;
+  }
+  ul {
+    // justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      padding: 20px;
+    }
+  }
+}
+// use section.card to reference each class
+body {
+  #heroImg {
+    border: 3px solid green;
+    padding: $padding;
+
+    // background-image: $coverImg;
+  }
+  background-color: color(primary);
+  font-family: "Montserrat", sans-serif;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  z-index: -1;
+
+  section {
+    padding: $padding;
+    // margin-top: 10px;
+    // background-color: map-get($colors, accenttwo);
+  }
+
+  //   using color function in variables file
+  .about {
+    background-color: color(accenttwo);
+  }
+  .news {
+    background-color: color(accent);
+  }
+  .contact {
+    background-color: color(accenttwo);
+  }
+  footer {
+    border: 3px solid black;
+    background-color: color(accent);
+    //   margin-top: 10px;
+    ul {
+      // justify-content: center;
+      text-transform: uppercase;
+      display: flex;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        padding: 20px;
+      }
+    }
+  }
+}
